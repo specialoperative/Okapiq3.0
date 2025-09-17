@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "tests/ui_test_opppy.py", line 50, in <module>
+    r = asyncio.get_event_loop().run_until_complete(run_test())
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "tests/ui_test_opppy.py", line 14, in run_test
+    await page.goto('http://localhost:3000/oppy', timeout=60000)
+  File "/Users/scripturebrandenburg/Library/Python/3.8/lib/python/site-packages/playwright/async_api/_generated.py", line 8969, in goto
+    await self._impl_obj.goto(
+  File "/Users/scripturebrandenburg/Library/Python/3.8/lib/python/site-packages/playwright/_impl/_page.py", line 553, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+  File "/Users/scripturebrandenburg/Library/Python/3.8/lib/python/site-packages/playwright/_impl/_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "/Users/scripturebrandenburg/Library/Python/3.8/lib/python/site-packages/playwright/_impl/_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+  File "/Users/scripturebrandenburg/Library/Python/3.8/lib/python/site-packages/playwright/_impl/_connection.py", line 520, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/oppy
+Call log:
+navigating to "http://localhost:3000/oppy", waiting until "load"
+

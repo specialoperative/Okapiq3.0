@@ -1,0 +1,194 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - link "Okapiq" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e7]: /
+      - generic [ref=e10]: Oppy
+    - navigation [ref=e11]:
+      - link "Dashboard" [ref=e12] [cursor=pointer]:
+        - /url: /dashboard
+      - link "Solutions" [ref=e13] [cursor=pointer]:
+        - /url: /solutions
+      - link "Market Scanner" [ref=e14] [cursor=pointer]:
+        - /url: /oppy
+      - link "Buy Box" [ref=e15] [cursor=pointer]:
+        - /url: /buy-box
+      - link "CRM" [ref=e16] [cursor=pointer]:
+        - /url: /crm
+      - link "Case Studies" [ref=e17] [cursor=pointer]:
+        - /url: /case-studies
+      - link "Pricing" [ref=e18] [cursor=pointer]:
+        - /url: /pricing
+      - link "Sign in" [ref=e20] [cursor=pointer]:
+        - /url: /signin
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - generic [ref=e23]:
+        - heading "Oppy – Opportunity Finder" [level=1] [ref=e24]
+        - paragraph [ref=e25]: Scan markets without API keys. Use mock public data to find SMB leads, score opportunities, and export CRM-ready lists.
+    - main [ref=e26]:
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e31]: google maps
+          - generic [ref=e33]: google serp
+          - generic [ref=e35]: yelp
+          - generic [ref=e37]: apify gmaps
+          - generic [ref=e39]: apify gmaps_email
+          - generic [ref=e41]: apify gmaps_websites
+          - generic [ref=e43]: apify website_crawler
+          - generic [ref=e45]: apify apollo
+          - generic [ref=e47]: apify linkedin_jobs
+          - generic [ref=e49]: linkedin
+          - generic [ref=e51]: sba records
+          - generic [ref=e53]: firecrawl
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - generic [ref=e58]: Location *
+              - generic [ref=e59]:
+                - generic [ref=e60]:
+                  - img [ref=e61]
+                  - textbox "Enter city, state, or zip code" [ref=e64]: San Francisco
+                - button "Search" [active] [ref=e65] [cursor=pointer]
+              - generic [ref=e66]:
+                - button "San Francisco" [ref=e67] [cursor=pointer]
+                - button "Los Angeles" [ref=e68] [cursor=pointer]
+                - button "New York" [ref=e69] [cursor=pointer]
+                - button "Chicago" [ref=e70] [cursor=pointer]
+                - button "Miami" [ref=e71] [cursor=pointer]
+                - button "Austin" [ref=e72] [cursor=pointer]
+            - generic [ref=e73]:
+              - generic [ref=e74]: Industry *
+              - combobox [ref=e75]:
+                - option "All Industries" [selected]
+                - option "HVAC"
+                - option "Plumbing"
+                - option "Electrical"
+                - option "Landscaping"
+                - option "Restaurant"
+                - option "Retail"
+                - option "Healthcare"
+                - option "Automotive"
+                - option "Construction"
+                - option "Manufacturing"
+                - option "IT Services"
+                - option "Real Estate"
+                - option "Education"
+                - option "Entertainment"
+                - option "Transportation"
+                - option "Accounting Firms"
+                - option "Security Guards"
+                - option "Fire and Safety"
+            - generic [ref=e76]:
+              - generic [ref=e77]: Min Revenue
+              - textbox "$1M" [ref=e78]
+            - generic [ref=e79]:
+              - generic [ref=e80]: Max Revenue
+              - textbox "$10M" [ref=e81]
+            - generic [ref=e82]:
+              - generic [ref=e83]: Owner Age
+              - combobox [ref=e84]:
+                - option "Any age" [selected]
+                - option "Under 30"
+                - option "30-40"
+                - option "40-50"
+                - option "50-60"
+                - option "60+"
+          - generic [ref=e85]:
+            - button "Advanced Filters" [ref=e86] [cursor=pointer]:
+              - img [ref=e87] [cursor=pointer]
+              - generic [ref=e89] [cursor=pointer]: Advanced Filters
+            - generic [ref=e90]:
+              - generic [ref=e91]: "View:"
+              - generic [ref=e92]:
+                - button "List View" [ref=e93] [cursor=pointer]:
+                  - img [ref=e94] [cursor=pointer]
+                - button "Map View" [ref=e95] [cursor=pointer]:
+                  - img [ref=e96] [cursor=pointer]
+        - generic [ref=e98]:
+          - generic:
+            - generic:
+              - generic: Finalizing…
+            - generic [ref=e99]: AI
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - heading "Intelligence Sources" [level=3] [ref=e102]
+            - generic [ref=e103]:
+              - generic [ref=e104]:
+                - checkbox "Google Maps Local results, ratings, reviews" [checked] [ref=e105]
+                - generic [ref=e106]:
+                  - generic [ref=e107]: Google Maps
+                  - generic [ref=e108]: Local results, ratings, reviews
+              - generic [ref=e109]:
+                - checkbox "Apify Google Maps Scraper Turbo GMaps actor (fast, resilient)" [checked] [ref=e110]
+                - generic [ref=e111]:
+                  - generic [ref=e112]: Apify Google Maps Scraper
+                  - generic [ref=e113]: Turbo GMaps actor (fast, resilient)
+              - generic [ref=e114]:
+                - checkbox "Apify GMaps Email Extractor Emails from listings/websites" [checked] [ref=e115]
+                - generic [ref=e116]:
+                  - generic [ref=e117]: Apify GMaps Email Extractor
+                  - generic [ref=e118]: Emails from listings/websites
+              - generic [ref=e119]:
+                - checkbox "Apify GMaps + Websites Leads + website scraping" [checked] [ref=e120]
+                - generic [ref=e121]:
+                  - generic [ref=e122]: Apify GMaps + Websites
+                  - generic [ref=e123]: Leads + website scraping
+              - generic [ref=e124]:
+                - checkbox "Google SERP (SerpAPI) Organic results, sites, phones" [checked] [ref=e125]
+                - generic [ref=e126]:
+                  - generic [ref=e127]: Google SERP (SerpAPI)
+                  - generic [ref=e128]: Organic results, sites, phones
+              - generic [ref=e129]:
+                - checkbox "Yelp Intelligence Owner detection, sentiment analysis" [checked] [ref=e130]
+                - generic [ref=e131]:
+                  - generic [ref=e132]: Yelp Intelligence
+                  - generic [ref=e133]: Owner detection, sentiment analysis
+              - generic [ref=e134]:
+                - checkbox "Firecrawl Hosted scraping fallback" [checked] [ref=e135]
+                - generic [ref=e136]:
+                  - generic [ref=e137]: Firecrawl
+                  - generic [ref=e138]: Hosted scraping fallback
+              - generic [ref=e139]:
+                - checkbox "Apify Website Crawler Content for NLP enrichment" [checked] [ref=e140]
+                - generic [ref=e141]:
+                  - generic [ref=e142]: Apify Website Crawler
+                  - generic [ref=e143]: Content for NLP enrichment
+              - generic [ref=e144]:
+                - checkbox "Apify Apollo Firmographics, contacts" [checked] [ref=e145]
+                - generic [ref=e146]:
+                  - generic [ref=e147]: Apify Apollo
+                  - generic [ref=e148]: Firmographics, contacts
+              - generic [ref=e149]:
+                - checkbox "Apify LinkedIn Jobs Hiring and activity signals" [checked] [ref=e150]
+                - generic [ref=e151]:
+                  - generic [ref=e152]: Apify LinkedIn Jobs
+                  - generic [ref=e153]: Hiring and activity signals
+              - generic [ref=e154]:
+                - checkbox "LinkedIn Signals Deal activity, owner profiles" [checked] [ref=e155]
+                - generic [ref=e156]:
+                  - generic [ref=e157]: LinkedIn Signals
+                  - generic [ref=e158]: Deal activity, owner profiles
+              - generic [ref=e159]:
+                - checkbox "SBA Records Loan history, succession signals" [checked] [ref=e160]
+                - generic [ref=e161]:
+                  - generic [ref=e162]: SBA Records
+                  - generic [ref=e163]: Loan history, succession signals
+          - generic [ref=e164]:
+            - heading "Advanced Filters" [level=3] [ref=e165]
+            - generic [ref=e166]:
+              - generic [ref=e167]:
+                - checkbox "Include succession risk analysis" [checked] [ref=e168]
+                - generic [ref=e169]: Include succession risk analysis
+              - generic [ref=e170]:
+                - checkbox "Fragmentation analysis" [checked] [ref=e171]
+                - generic [ref=e172]: Fragmentation analysis
+              - generic [ref=e173]:
+                - checkbox "LinkedIn deal signals" [checked] [ref=e174]
+                - generic [ref=e175]: LinkedIn deal signals
+```

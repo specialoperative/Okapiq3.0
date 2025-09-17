@@ -1,0 +1,15 @@
+
+> okapiq-frontend@1.0.0 dev
+> next dev
+
+   ▲ Next.js 14.0.4
+   - Local:        http://localhost:3000
+   - Environments: .env.local
+
+ ✓ Ready in 3.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 6.1s (1172 modules)
+ ✓ Compiled in 706ms (591 modules)
+ ○ Compiling /crm ...
+ ✓ Compiled /crm in 774ms (1172 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload

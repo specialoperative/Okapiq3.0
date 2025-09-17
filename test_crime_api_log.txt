@@ -1,0 +1,21 @@
+INFO:     Started server process [69639]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+/Users/scripturebrandenburg/Desktop/CS_PROJECTS/oc_startup/backend/test_crime_api.py:114: DeprecationWarning: 'mode' parameter is deprecated and will be removed in Pillow 13 (2026-10-15)
+  heat_img = Image.fromarray(colored_data, 'RGBA')
+Starting Crime Heatmap Test Server on port 8001...
+INFO:     127.0.0.1:59742 - "GET /analytics/crime-tiles/4/4/6?city=us HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59743 - "GET /analytics/crime-tiles/4/3/6?city=us HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59742 - "GET /analytics/crime-tiles/4/5/5?city=us HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59744 - "GET /analytics/crime-tiles/4/4/5?city=us HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59743 - "GET /analytics/crime-tiles/4/2/6?city=us HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59745 - "GET /analytics/crime-tiles/4/3/5?city=us HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59746 - "GET /analytics/crime-tiles/4/5/6?city=us HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59747 - "GET /analytics/crime-tiles/4/2/5?city=us HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54839 - "GET /analytics/crime-tiles/4/4/6?city=us HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54841 - "GET /analytics/crime-tiles/4/3/6?city=us HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54843 - "GET /analytics/crime-tiles/4/4/5?city=us HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54845 - "GET /analytics/crime-tiles/4/5/6?city=us HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54847 - "GET /analytics/crime-tiles/4/5/5?city=us HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54849 - "GET /analytics/crime-tiles/4/3/5?city=us HTTP/1.1" 200 OK

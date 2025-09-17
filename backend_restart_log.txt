@@ -1,0 +1,87 @@
+INFO:     Will watch for changes in these directories: ['/Users/scripturebrandenburg/Desktop/CS_PROJECTS/oc_startup/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [54557] using WatchFiles
+INFO:     Started server process [54560]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:64185 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'app/routers/intelligence.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [54560]
+INFO:     Started server process [54654]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:app.crawlers.smart_crawler_hub.GoogleSerpAgent:SERP parsed items: 20 for query='businesses San Francisco' loc='San Francisco'
+ERROR:app.crawlers.smart_crawler_hub.GoogleScapeAgent:Google Maps crawl failed: Target page, context or browser has been closed
+INFO:     127.0.0.1:64261 - "GET /analytics/crime-heat?provider=crimeometer&city=us&limit=8000&days_back=365 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64267 - "GET /analytics/crime-heat?provider=crimeometer&city=us&limit=8000&days_back=365 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64267 - "OPTIONS /intelligence/scan HTTP/1.1" 200 OK
+INFO:app.routers.intelligence:Market scan request: San Francisco, industry: 
+INFO:app.crawlers.smart_crawler_hub.GoogleSerpAgent:SERP parsed items: 20 for query='businesses San Francisco' loc='San Francisco'
+INFO:app.routers.intelligence:Fast market scan completed in 38.80s, found 20 businesses
+INFO:     127.0.0.1:64231 - "POST /intelligence/scan HTTP/1.1" 200 OK
+ERROR:app.crawlers.smart_crawler_hub.GoogleScapeAgent:Google Maps crawl failed: Target page, context or browser has been closed
+INFO:app.routers.intelligence:Fast market scan completed in 42.20s, found 41 businesses
+INFO:     127.0.0.1:64894 - "GET /analytics/crime-heat?provider=crimeometer&city=us&limit=8000&days_back=365 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64931 - "GET /analytics/crime-heat?provider=crimeometer&city=us&limit=8000&days_back=365 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64964 - "OPTIONS /intelligence/scan HTTP/1.1" 200 OK
+INFO:app.routers.intelligence:Market scan request: San Francisco, industry: 
+INFO:app.crawlers.smart_crawler_hub.GoogleSerpAgent:SERP parsed items: 20 for query='businesses San Francisco' loc='San Francisco'
+ERROR:app.crawlers.smart_crawler_hub.GoogleScapeAgent:Google Maps crawl failed: Target page, context or browser has been closed
+WARNING:  WatchFiles detected changes in 'app/routers/intelligence.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for background tasks to complete. (CTRL+C to force quit)
+INFO:app.routers.intelligence:Fast market scan completed in 41.79s, found 41 businesses
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [54654]
+Process SpawnProcess-3:
+Traceback (most recent call last):
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/site-packages/uvicorn/_subprocess.py", line 70, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/os.py", line 1023, in fdopen
+    return io.open(fd, *args, **kwargs)
+OSError: [Errno 9] Bad file descriptor
+WARNING:  WatchFiles detected changes in 'app/routers/intelligence.py'. Reloading...
+Process SpawnProcess-4:
+Traceback (most recent call last):
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/site-packages/uvicorn/_subprocess.py", line 70, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/os.py", line 1023, in fdopen
+    return io.open(fd, *args, **kwargs)
+OSError: [Errno 9] Bad file descriptor
+WARNING:  WatchFiles detected changes in 'app/routers/intelligence.py'. Reloading...
+Process SpawnProcess-5:
+Traceback (most recent call last):
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/site-packages/uvicorn/_subprocess.py", line 70, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/os.py", line 1023, in fdopen
+    return io.open(fd, *args, **kwargs)
+OSError: [Errno 9] Bad file descriptor
+WARNING:  WatchFiles detected changes in 'app/routers/intelligence.py'. Reloading...
+Process SpawnProcess-6:
+Traceback (most recent call last):
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/site-packages/uvicorn/_subprocess.py", line 70, in subprocess_started
+    sys.stdin = os.fdopen(stdin_fileno)
+  File "/Users/scripturebrandenburg/opt/anaconda3/lib/python3.9/os.py", line 1023, in fdopen
+    return io.open(fd, *args, **kwargs)
+OSError: [Errno 9] Bad file descriptor
+INFO:     Stopping reloader process [54557]
