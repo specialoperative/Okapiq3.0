@@ -1,5 +1,3 @@
-import BusinessLookup from "../src/components/BusinessLookup"
-
 export default function Page() {
   return (
     <div className="min-h-screen bg-black">
@@ -248,9 +246,6 @@ export default function Page() {
             </div>
           </div>
         </div>
-
-        {/* Main Business Lookup Component */}
-        <BusinessLookup />
 
         {/* Features Section */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
