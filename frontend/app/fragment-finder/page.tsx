@@ -267,7 +267,7 @@ const FragmentFinderPage = () => {
                      (b.source_count || 1) +
                      (b.rating && b.rating > 0 ? 1 : 0)
       }))
-      .sort((a, b) => b.digitalScore - a.digitalScore)
+      .sort((a: any, b: any) => b.digitalScore - a.digitalScore)
       .slice(0, 3);
 
     return {
