@@ -238,7 +238,7 @@ const FragmentFinderPage = () => {
     const fragmentation = Math.max(75, Math.min(95, Math.round((1 - hhi) * 100)));
     
     // Industry-specific market size multipliers (average revenue per business)
-    const industryMultipliers = {
+    const industryMultipliers: { [key: string]: number } = {
       'hvac': 800000, 'plumbing': 700000, 'electrical': 750000,
       'restaurant': 500000, 'retail': 600000, 'healthcare': 1200000,
       'automotive': 650000, 'construction': 900000, 'manufacturing': 1500000,
