@@ -903,7 +903,7 @@ const FragmentFinderPage = () => {
                   timeToClose: 'Time to Close'
                 };
                 
-                const getColor = (val) => {
+                const getColor = (val: number) => {
                   if (val >= 8) return 'bg-green-500';
                   if (val >= 6) return 'bg-yellow-500';
                   return 'bg-red-500';
