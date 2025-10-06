@@ -252,7 +252,7 @@ const FragmentFinderPage = () => {
     
     // Get top 3 players by digital presence and market indicators
     const topPlayers = businesses
-      .map((b: any, index) => ({
+      .map((b: any, index: number) => ({
         name: b.name,
         marketShare: Math.round((normalizedShares[index] || 1) * 10) / 10,
         revenue: Math.round((normalizedShares[index] || 1) * marketSize / 100 * 10) / 10,
