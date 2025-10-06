@@ -216,7 +216,7 @@ const FragmentFinderPage = () => {
     const totalBusinesses = businesses.length;
     
     // Calculate market concentration (HHI) based on digital presence and data quality
-    const marketShares = businesses.map(b => {
+    const marketShares = businesses.map((b: any) => {
       // Score businesses based on digital presence and data completeness
       const hasWebsite = b.website && b.website !== 'N/A' && !b.website.includes('yelp.com') ? 1.3 : 1.0;
       const hasEmail = b.email && b.email !== 'N/A' ? 1.2 : 1.0;
