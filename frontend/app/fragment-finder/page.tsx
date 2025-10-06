@@ -417,7 +417,7 @@ const FragmentFinderPage = () => {
       };
       
       setAnalysisResults(newData);
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Analysis failed:', error);
       // Fallback to mock data if API fails
       if (useCustomAnalysis) {
