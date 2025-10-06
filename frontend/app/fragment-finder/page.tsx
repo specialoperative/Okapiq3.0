@@ -228,11 +228,11 @@ const FragmentFinderPage = () => {
       return hasWebsite * hasEmail * hasPhone * sourceCount * hasRating;
     });
     
-    const totalWeight = marketShares.reduce((sum, share) => sum + share, 0);
-    const normalizedShares = marketShares.map(share => (share / totalWeight) * 100);
+    const totalWeight = marketShares.reduce((sum: number, share: number) => sum + share, 0);
+    const normalizedShares = marketShares.map((share: number) => (share / totalWeight) * 100);
     
     // Calculate HHI (Herfindahl-Hirschman Index)
-    const hhi = normalizedShares.reduce((sum, share) => sum + Math.pow(share, 2), 0) / 10000;
+    const hhi = normalizedShares.reduce((sum: number, share: number) => sum + Math.pow(share, 2), 0) / 10000;
     
     // Calculate fragmentation percentage (inverse of concentration)
     const fragmentation = Math.max(75, Math.min(95, Math.round((1 - hhi) * 100)));
