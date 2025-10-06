@@ -193,17 +193,17 @@ const FragmentFinderPage = () => {
         throw new Error(`API returned ${response.status}: ${response.statusText}`);
       }
 
-      const data = await response.json();
-      console.log('✅ Real market data fetched:', data);
-      return data;
-    } catch (error) {
-      if (error.name === 'AbortError') {
-        console.warn('⚠️ Market data request timed out after 2 minutes');
-      } else {
-        console.error('❌ Error fetching real market data:', error);
-      }
-      return null;
+    const data = await response.json();
+    console.log('✅ Real market data fetched:', data);
+    return data;
+  } catch (error: unknown) {
+    if (error instanceof Error && error.name === 'AbortError') {
+      console.warn('⚠️ Market data request timed out after 2 minutes');
+    } else {
+      console.error('❌ Error fetching real market data:', error);
     }
+    return null;
+  }
   };
 
   // Calculate fragmentation metrics from real market data
